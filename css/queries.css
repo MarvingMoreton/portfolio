@@ -1,0 +1,1066 @@
+/* ************************ */
+/* BELOW 1248px (Tablets) */
+/* ************************ */
+/* 1248/16px = 78 */
+
+@media (max-width: 78em) {
+    html {
+        font-size: 56%;
+        /* dont know exactly why 56%? */
+    }
+    .featured-logos {
+        width: 95%;
+    }
+
+    .project-description {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+
+        /* line-height: 24px; */
+        color: #ffffff;
+        background-color: rgba(31, 34, 53, 0.5);
+        /* blurred shadow */
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+        backdrop-filter: blur(40px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 1.2rem;
+        height: 18.8rem;
+        width: 68.6rem;
+        left: 61.9rem;
+        top: 140.7rem;
+
+        /* Positionning to overlay in the middle */
+        position: absolute;
+        right: 0;
+        top: calc(50% - 9.4rem);
+        left: calc(57%);
+    }
+
+    .project-skills {
+        top: calc(50% + 11.4rem);
+        left: calc(118%);
+    }
+
+    /*project reverse*/
+
+    .project-description--reverse {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+
+        /* line-height: 24px; */
+        color: #ffffff;
+        background-color: rgba(31, 34, 53, 0.5);
+        /* blurred shadow */
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+        backdrop-filter: blur(40px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 1.2rem;
+        height: 18.8rem;
+        width: 68.6rem;
+        left: 61.9rem;
+        top: 140.7rem;
+
+        /* Positionning to overlay in the middle */
+        position: absolute;
+        right: 0;
+        top: calc(50% - 9.4rem);
+        left: calc(-57%);
+    }
+    .project-skills--reverse {
+        left: calc(-52%);
+        top: calc(50% + 11.4rem);
+    }
+    .skills-list {
+        gap: 2rem;
+    }
+    .skills-link {
+        font-size: 1.8rem;
+    }
+
+    /* Résumé */
+
+    .resume-grid{
+        column-gap: 2rem;
+    }
+    .logo-experience {
+        width: 68%;
+    }
+}
+
+/* */
+/* ************************ */
+/* at 1065px (Tablets) */
+/* ************************ */
+/* 1065/16px = 67 */
+@media (max-width: 67em) {
+    .hero-img {
+        width: 90%;
+    }
+    /* ************************ */
+    /* PROJECTS SECTION */
+    /* ************************ */
+
+    .featured-logos {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .crakrevenue,
+    .mc2i {
+        display: none;
+    }
+
+    .container-project--1 {
+        /* Omnifood */
+        max-width: 140rem;
+        padding: 0 3.2rem;
+        margin: 0 auto;
+        margin-bottom: 20rem;
+    }
+    .container--reverse {
+        max-width: 140rem;
+        padding: 0 3.2rem ;
+        margin: 0 auto;
+    }
+
+    .project-box {
+        /* display: grid; */
+        position: relative;
+        width: 60%;
+        grid-column: 1 / 5;
+    }
+    .project-box-reverse {
+        position: relative;
+        width: 60%;
+        grid-column: 1 / 5;
+    }
+
+    .project-img,
+    .project-img--reverse {
+        width: 100%;
+    }
+
+
+
+    .project-description {
+        /* Positionning to overlay in the middle */
+        position: absolute;
+        right: 0;
+        top: calc(97% - 9.4rem);
+        left: calc(0%);
+        width: 100%;
+    }
+
+    .project-description--reverse {
+        /* Positionning to overlay in the middle */
+        position: absolute;
+        right: 0;
+        top: calc(97% - 9.4rem);
+        left: calc(0%);
+        width: 100%;
+    }
+
+    .project-description p,
+    .project-description--reverse p {
+        padding-right: 2.8rem;
+        padding-left: 2.8rem;
+        padding-bottom: 5rem;
+        font-size: 2rem;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-skills {
+        right: 0;
+        left: calc(51%);
+        top: calc(76% + 11rem);
+    }
+    .project-skills--reverse {
+        left: calc(51%);
+        top: calc(76% + 11rem);
+    }
+    .skillset-box-items--4 {
+        width: 70%;
+    }
+    .skillset-box-items--3 {
+        width: 55%;
+    }
+    .skillset-box-items--2  {
+        width: 35%;
+    }
+
+    /* résumé */
+    .resume-grid{
+        grid-template-columns: 1fr, 2fr;
+    }
+}
+
+/* ************************ */
+/* BELOW 960px (Tablets) */
+/* ************************ */
+
+/* 940/16px = 59 */
+@media (max-width: 60em) {
+    html {
+        /* 8px / 16px = 50% */
+        font-size: 50%;
+    }
+
+    /* MOBILE NAVIGATION */
+    .btn-mobile-nav {
+        display: block;
+        z-index: 1000;
+    }
+
+    .main-nav {
+        background-color: rgba(31, 34, 53, 0.97);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* Animating slide in */
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* Hide navigation */
+        /* display: none; --> Allows NO transition at all */
+
+        /* Unlike "Opacity" which we can animate: */
+
+        /* Step 1 : Hide the element visually */
+        opacity: 0;
+        transition: all 0.5s ease-in;
+
+        /* Step 2: Make it unaccessible to mouse and keyboard */
+        pointer-events: none;
+
+        /* Step 3: hide it from screen readers */
+        visibility: hidden;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        position: fixed;
+        /* Transform property used to make the burger menu animation slide in - Smoother with "transform" */
+        transform: translateX(0%);
+    }
+
+    .nav-open .icon-mobile-nav[name='close-outline'] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name='menu-outline'] {
+        display: none;
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        gap: 4rem;
+    }
+
+    .hero-text-box,
+    .hero-image-box {
+        text-align: center;
+    }
+    .hero-img {
+        width: 55%;
+    }
+
+    .hero-description {
+        padding: 0 16rem;
+    }
+
+    .featured-logos {
+        grid-template-columns: repeat(3, 1fr);
+        width: 85%;
+    }
+    .crakrevenue,
+    .mc2i {
+        display: none;
+    }
+
+    .skillset-box.grid {
+        row-gap: 3rem;
+    }
+
+    /* PROJECT */
+
+    .project-description {
+        /* Positionning to overlay in the middle */
+        position: absolute;
+        right: 0;
+        top: calc(97% - 9.4rem);
+        left: calc(0%);
+        width: 100%;
+    }
+
+    .project-description--reverse {
+        /* Positionning to overlay in the middle */
+        position: absolute;
+        right: 0;
+        top: calc(97% - 9.4rem);
+        left: calc(0%);
+        width: 100%;
+    }
+
+    .project-description p,
+    .project-description--reverse p {
+        padding-right: 2.8rem;
+        padding-left: 2.8rem;
+        padding-bottom: 5rem;
+        font-size: 2rem;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-skills {
+        left: calc(51%);
+        top: calc(77% + 11rem);
+    }
+    .project-skills--reverse {
+        left: calc(51%);
+        top: calc(77% + 11rem);
+    }
+    .icon-open-window,
+    .icon-github {
+        width: 75%;
+    }
+
+    /* ************************ */
+    /* RÉSUMÉ SECTION */
+    /* ************************ */
+
+    .resume-grid {
+    column-gap: 5rem;
+    width: 90%;
+    }
+
+    .resume-subtitle {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        /* identical to box height */
+
+        color: #fab874;
+    }
+    .work-experiences {
+        grid-column: 1 / 3;
+        justify-self: start;
+        margin-left: 8rem;
+        margin-top: 0rem;
+    }
+
+    .logo-experience {
+        width: 68%;
+    }
+
+
+}
+
+/* ************************ */
+/* BELOW 833px (Smaller Tablets & larges mobiles) */
+/* ************************ */
+
+@media (max-width: 52em) {
+    html {
+        /* 8px / 16px = 50% */
+        font-size: 50%;
+    }
+
+    .grid--3-cols {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+
+    .hero-description {
+        padding: 0 18rem;
+    }
+    .featured-logos {
+        grid-template-columns: repeat(2, 1fr);
+        width: 64%;
+        row-gap: 2.4rem;
+        margin-top: 4.8rem;
+    }
+
+    .icon-open-window,
+    .icon-github {
+        width: 70%;
+    }
+
+    /* Project */
+
+    .project-skills {
+      left: calc(51%);
+      top: calc(77% + 11rem);
+  }
+  .project-skills--reverse {
+      left: calc(51%);
+      top: calc(77% + 11rem);
+  }
+
+    /* Résumé */
+
+    .resume-grid {
+        display: block;
+        text-align: start;
+        padding: 4rem 3.6rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+
+.education,
+.certification{
+        margin-top: 8rem;
+
+    }
+
+    .logo-experience,
+    .logo-certification {
+        width: 60%;
+    }
+
+    .logo-certification{
+        display: flex;
+    }
+    .see-more-box{
+        display: none;
+    }
+
+    /*  */
+    .skillset-box-items--4 {
+        width: 70%;
+    }
+    .skillset-box-items--3 {
+        width: 50%;
+    }
+    .skillset-box-items--2  {
+        width: 45%;
+    }
+}
+
+/* ************************ */
+/* BELOW 750px (Smaller Tablets) */
+/* ************************ */
+@media (max-width: 47em) {
+    html {
+        font-size: 50%;
+    }
+    .hero-img {
+      width: 65%;
+  }
+    .hero-description {
+        padding: 0 16rem;
+    }
+    .featured-logos {
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+        row-gap: 2.4rem;
+        margin-top: 4.8rem;
+    }
+
+    /* Project */
+  .project-skills {
+      left: calc(34%);
+      top: calc(75% + 11rem);
+  }
+  .project-skills--reverse {
+      left: calc(34%);
+      top: calc(75% + 11rem);
+  }
+    /* Résumé */
+    .résumé-grid {
+        width: 70%;
+    }
+
+    .grid--3-cols-expertise {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 80%;
+    }
+
+    .skillset-box-items--4 {
+        width: 88%;
+    }
+    .skillset-box-items--3 {
+        width: 68%;
+    }
+    .skillset-box-items--2{
+        width: 48%;
+    }
+}
+
+/* ************************ */
+/* BELOW 652px (Smaller Tablets) */
+/* ************************ */
+@media (max-width: 41em) {
+    .featured-logos {
+        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+        row-gap: 3rem;
+        margin-top: 4.8rem;
+    }
+    .hero {
+        width: 96%;
+        margin-top: 0rem;
+    }
+    .hero-img {
+      width: 70%;
+  }
+    .hero-description {
+        padding: 0 8rem;
+    }
+
+
+    .grid--3-cols-expertise {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 80%;
+    }
+
+
+    /* PROJECT */
+    .project-box{
+    position: relative;
+    width: 85%;
+    align-items: flex-start;
+    justify-content: center;
+    grid-column: 1/ 1;
+    display: flex;
+    }
+
+    .project-box-reverse{
+     width: 85%;
+    }
+.container-project--1.grid--4-cols{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .img-omnifood {
+        width: 100%;
+    }
+
+
+    .project-description--reverse {
+        /* Positionning to overlay in the middle */
+        position: absolute;
+        right: 0;
+        top: calc(97% - 9.4rem);
+        left: calc(0%);
+        width: 100%;
+    }
+
+    .project-description p,
+    .project-description--reverse p {
+        padding-right: 2.8rem;
+        padding-left: 2.8rem;
+        padding-bottom: 5rem;
+        font-size: 2rem;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-skills {
+        position: absolute;
+        right: 0;
+        left: calc(48%);
+        top: calc(78% + 11rem);
+        z-index: 3;
+    }
+    .project-skills--reverse {
+        position: absolute;
+        right: 0;
+        left: calc(48%);
+        top: calc(78% + 11rem);
+        z-index: 3;
+    }
+
+    .icon-open-window,
+    .icon-github {
+        width: 75%;
+    }
+
+    /*  */
+    .logo-experience,
+    .logo-certification {
+        width: 60%;
+    }
+
+    /* Skills */
+
+    .skills-tabs-header{
+        width: 120%;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .skillset-box.grid--4-cols{
+        grid-template-columns: 1fr 1fr;;
+
+    }
+    .skillset-box.grid--3-cols{
+    grid-template-columns: 1fr 1fr;;
+    justify-items: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .grid--2-cols-seo{
+        grid-template-columns: 1fr 1fr;;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .skillset-box-items--4{
+        width: 100%;
+    }
+    .skillset-box-items--3{
+        width: 85%;
+    }
+
+
+    .skillset-box-items--2{
+        width: 85%;
+
+    }
+
+    /* CTA */
+    .cta {
+        width: 100%;
+        padding: 4rem;
+    }
+    .cta-text-box{
+        grid-column: 1/3;
+        padding: 0rem;
+        text-align: center;
+    }
+    .cta-text-box h3{
+        text-align: center;
+    }
+    .cta-btn-box{
+        grid-column: 1/3;
+align-items: center;
+justify-content: center;
+margin-top: 5rem;
+    }
+}
+
+
+/* ************************ */
+/* BELOW 550px (Smaller phones) */
+/* ************************ */
+@media (max-width: 34em) {
+
+   .hero-img {
+      width: 65%;
+  }
+ /* PROJECT */
+
+ .section-projects{
+    margin-bottom: 20rem;
+}
+.container-project--1{
+    margin-bottom: 35rem;
+}
+.project-box{
+    position: relative;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/ 1;
+    display: flex;
+    }
+
+    .project-box-reverse{
+     width: 85%;
+    }
+.container-project--1.grid--4-cols{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .img-omnifood {
+        width: 100%;
+    }
+.project-description {
+right: 0;
+top: calc(80%);
+left: calc(0%);
+width: 100%;
+justify-items: center;
+align-items: flex-start;
+padding-top:2rem;
+height: 80%;
+    }
+
+    .project-description--reverse {
+        justify-items: center;
+        align-items: flex-start;
+        right: 0;
+        top: calc(80%);
+        left: calc(0%);
+        width: 100%;
+        height: 80%;
+        padding-top:2rem;
+
+    }
+
+    .project-description p,
+    .project-description--reverse p {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+        padding-bottom: 0rem;
+        font-size: 2rem;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-skills {
+        left: calc(25%);
+        top: calc(140%);
+    }
+    .project-skills--reverse {
+        left: calc(25%);
+        top: calc(140%);
+    }
+
+    .icon-open-window,
+    .icon-github {
+        width: 75%;
+    }
+
+ /*  */
+ .logo-experience,
+ .logo-certification {
+     width: 60%;
+ }
+    /* Skills */
+
+    .skills-tabs-header{
+        width: 120%;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .skillset-box.grid--4-cols{
+        grid-template-columns: 1fr 1fr;;
+
+    }
+    .skillset-box.grid--3-cols{
+    grid-template-columns: 1fr 1fr;;
+    justify-items: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .grid--2-cols-seo{
+        grid-template-columns: 1fr 1fr;;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .skillset-box-items--4{
+        width: 85%;
+    }
+    .skillset-box-items--3{
+        width: 85%;
+    }
+
+    .skillset-box-items--2{
+        width: 85%;
+
+    }
+}
+
+/* ************************ */
+/* BELOW 526px (Smaller phones) */
+/* ************************ */
+@media (max-width: 33em) {
+
+    .hero {
+        width: 96%;
+        margin-top: 0rem;
+    }
+    .hero-description {
+        padding: 0 4rem;
+    }
+
+    .hero-title{
+        font-size: 3.2rem;
+        padding: 0rem;
+    }
+    .hero-img {
+      width: 90%;
+  }
+
+    /* PROJECT */
+
+.section-projects{
+    margin-bottom: 20rem;
+}
+.container-project--1{
+    margin-bottom: 35rem;
+}
+.project-box{
+    position: relative;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/ 1;
+    display: flex;
+    }
+
+    .project-box-reverse{
+     width: 85%;
+    }
+.container-project--1.grid--4-cols{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .img-omnifood {
+        width: 100%;
+    }
+.project-description {
+right: 0;
+top: calc(90%);
+left: calc(0%);
+width: 100%;
+height: 100%;
+justify-items: center;
+align-items: flex-start;
+padding-top:2rem;
+    }
+
+    .project-description--reverse {
+        justify-items: center;
+        align-items: flex-start;
+        right: 0;
+        top: calc(90%);
+        left: calc(0%);
+        width: 100%;
+        height: 100%;
+        padding-top:2rem;
+
+    }
+
+    .project-description p,
+    .project-description--reverse p {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+        padding-bottom: 0rem;
+        font-size: 2rem;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-skills {
+        left: calc(25%);
+        top: calc(168%);
+    }
+    .project-skills--reverse {
+        left: calc(25%);
+        top: calc(168%);
+    }
+
+    .icon-open-window,
+    .icon-github {
+        width: 75%;
+    }
+
+
+    /* SKILLS */
+
+    .skillset-box-items--4{
+        width: 100%;
+    }
+    .skillset-box-items--3{
+        width: 100%;
+    }
+
+
+    .skillset-box-items--2{
+        width: 100%;
+
+    }
+}
+
+/* ************************ */
+/* BELOW 430px (Smaller phones) */
+/* ************************ */
+@media (max-width: 27em) {
+
+    .hero {
+        width: 96%;
+        margin-top: 0rem;
+    }
+    .hero-description {
+        padding: 0 4rem;
+    }
+
+    .hero-title{
+        font-size: 3.2rem;
+        padding: 0rem;
+    }
+    .hero-img {
+      width: 100%;
+  }
+
+    /* PROJECT */
+
+.section-projects{
+    margin-bottom: 20rem;
+}
+.container-project--1{
+    margin-bottom: 35rem;
+}
+.project-box{
+    position: relative;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/ 1;
+    display: flex;
+    }
+
+    .project-box-reverse{
+     width: 85%;
+    }
+.container-project--1.grid--4-cols{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .img-omnifood {
+        width: 100%;
+    }
+.project-description {
+right: 0;
+top: calc(80%);
+left: calc(0%);
+width: 100%;
+justify-items: center;
+align-items: flex-start;
+padding-top:2rem;
+height: 145%;
+    }
+
+    .project-description--reverse {
+        justify-items: center;
+        align-items: flex-start;
+        right: 0;
+        top: calc(80%);
+        left: calc(0%);
+        width: 100%;
+        height: 145%;
+        padding-top:2rem;
+
+    }
+
+    .project-description p,
+    .project-description--reverse p {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+        padding-bottom: 0rem;
+        font-size: 2rem;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-skills {
+        left: calc(12%);
+        top: calc(190%);
+    }
+    .project-skills--reverse {
+        left: calc(12%);
+        top: calc(190%);
+    }
+
+    .icon-open-window,
+    .icon-github {
+        width: 75%;
+    }
+
+
+    /* SKILLS */
+
+    .skillset-box-items--4{
+        width: 100%;
+    }
+    .skillset-box-items--3{
+        width: 100%;
+    }
+
+
+    .skillset-box-items--2{
+        width: 100%;
+
+    }
+}
+
+/* ************************ */
+/* BELOW 375px (Smaller phones) */
+/* ************************ */
+@media (max-width: 24em) {
+  .project-skills {
+    left: calc(12%);
+    top: calc(200%);
+}
+.project-skills--reverse {
+
+    left: calc(12%);
+    top: calc(200%);
+}
+}
+
+
+/* ************************ */
+/* BELOW 350px (Smaller phones) */
+/* ************************ */
+@media (max-width: 22em) {
+  .project-skills {
+   display: none
+}
+.project-skills--reverse {
+    display: none
+}
+}

@@ -1,0 +1,250 @@
+/**************************/
+/*  SYSTEMS  */
+/**************************/
+
+/* 
+---- 01 TYPOGRAPHY SYSTEM
+
+FONT FAMILY
+Lato & Montserrat
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+__Font weights: 
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+__Line heights:
+default: 1
+Small: 1.05
+Paragraph default: 1.6
+
+__Letter spacing 
+0.5px
+0.75px
+
+
+---- 02 COLORS
+
+_Primary:
+ 
+__Blue:
+Main: 141A31
+lighter blue: 1F2235
+Black blue : 24263B
+
+
+__Yellow: 
+Main: FAB874
+
+_Greys:
+Intermediate grey: E2DFDF
+Light grey: C4C4C4
+Dark grey: 767676
+
+
+--- 03 SHADOWS
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+
+--- 04 BORDER-RADIUS
+
+8px (defualt) / 12px / 14px / 16px / 18px / 20px / 24px / 50%
+
+
+--- 05 WHITESPACE
+
+_Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 10px/16 px = 0.626= 62.5%; do not set a fix font-size, use % instead. *Percentage of user's browser font-size setting */
+    background-color: #141a31;
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 0 3.2rem;
+    /* line-height: 24px; */
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* adding height bcoz we want header to be sticky later : */
+    height: 9.6rem;
+    padding: 0 4.8rem;
+
+    position: relative;
+    /* added in the media queries mobile phase, because we set up .main-nav to absolute, so parent need to be relative */
+    /* background-color: rgb(31, 34, 53); */
+    /* width: 100%; */
+}
+
+.main-nav {
+    z-index: 999;
+}
+
+body,
+footer {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #ffff;
+    overflow-x: hidden;
+}
+
+footer {
+    background: #1f2235;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+span {
+    line-height: 1.4px;
+}
+
+a:-webkit-any-link {
+    /* color: black; */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/**************************/
+/*  GENERAL REUSABLE COMPONENTS  */
+/**************************/
+.heading-secondary {
+    text-align: center;
+    font-size: 3.4rem;
+    line-height: 1.2;
+    margin-bottom: 8rem;
+}
+
+.container {
+    /* Omnifood */
+    max-width: 140rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+
+    /* Remi
+     max-width: 102.4rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    width: 100%; */
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 16rem;
+    justify-items: center;
+}
+
+.grid--2-cols-seo {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 8rem;
+    justify-items: center;
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.grid--3-cols-expertise {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.btn-orange,
+.btn-orange:link,
+.btn-orange:visited {
+    display: inline-block;
+    text-decoration: none !important;
+    font-family: 'montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 12px;
+    color:black;
+    background-color: #fab874;
+    border: none;
+    /* Only necessary for.btn from form
+    border: none;
+    cursor: pointer;
+    font-family: inherit; */
+
+    /* trick annimation btn with CSS */
+    transition: all 0.3s;
+    /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
+    */
+}
+.btn-orange a{
+    color:black !important;
+}
+
+.btn-dark,
+.btn-dark:link,
+.btn-dark:visited {
+    display: inline-block;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 3.1rem;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.8rem;
+    color: #ffff;
+    background-color: #141a31;
+    border: none;
+    /* Only necessary for.btn from form
+    border: none;
+    cursor: pointer;
+    font-family: inherit; */
+
+    /* trick annimation btn with CSS */
+    transition: all 0.3s;
+    /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
+    */
+}
+
+.hidden {
+    display: none;
+}
