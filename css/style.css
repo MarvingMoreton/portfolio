@@ -142,7 +142,7 @@
 } */
 
 .hero-img {
-    width: 100%;
+    width: 115%;
 }
 
 /* ************************ */
@@ -717,17 +717,15 @@ width: 38%;
     justify-content: center;
   }
 
-  .footer-link{
+  .footer-link {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 2rem;
     line-height: 1.5rem;
     /* or 75% */
-
     text-align: center;
     text-transform: capitalize;
-
     color: #FFFFFF;
       }
   .footer-link:link,
