@@ -1,7 +1,3 @@
-/**************************/
-/*  XYZ SECTION  */
-/**************************/
-
 /* ************************ */
 /* HEADER */
 /* ************************ */
@@ -739,16 +735,9 @@ width: 38%;
   .skill-icon-link:link,
   .skill-icon-link:visited {
     text-decoration: none;
-    color: #ffff;
+    color: white;
     transition: all 0.3s;
   }
-
-  /*test for color bug on Safari?  */
-  .skill-icon-link:link,
-  .skill-icon-link:visited {
-    fill: var(--link-visited-color);
-}
-
 
 
   .footer-link:hover,
@@ -773,7 +762,6 @@ height: 3rem;
 line-height: 1.6;
 width: 3rem;
   }
-
 
   .line hr{
     border: 0.05px solid rgba(196, 196, 196, 0.125);

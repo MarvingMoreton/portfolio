@@ -2,7 +2,7 @@
 /*  SYSTEMS  */
 /**************************/
 
-/* 
+/*
 ---- 01 TYPOGRAPHY SYSTEM
 
 FONT FAMILY
@@ -11,7 +11,7 @@ Lato & Montserrat
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
-__Font weights: 
+__Font weights:
 Default: 400
 Medium: 500
 Semi-bold: 600
@@ -22,7 +22,7 @@ default: 1
 Small: 1.05
 Paragraph default: 1.6
 
-__Letter spacing 
+__Letter spacing
 0.5px
 0.75px
 
@@ -30,14 +30,14 @@ __Letter spacing
 ---- 02 COLORS
 
 _Primary:
- 
+
 __Blue:
 Main: 141A31
 lighter blue: 1F2235
 Black blue : 24263B
 
 
-__Yellow: 
+__Yellow:
 Main: FAB874
 
 _Greys:
@@ -128,6 +128,7 @@ a:-webkit-any-link {
     /* color: black; */
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
 }
 
 /**************************/
